@@ -1,0 +1,44 @@
+{
+    "name": "phpviet/symfony-number-to-words",
+    "type": "symfony-bundle",
+    "description": "Symfony number to words hổ trợ chuyển đổi số sang chữ số Tiếng Việt",
+    "keywords": [
+        "phpviet",
+        "symfony-number-to-words"
+    ],
+    "homepage": "https://github.com/phpviet/symfony-number-to-words",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vuong Xuong Minh",
+            "email": "vuongxuongminh@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "phpviet/number-to-words": "^1.0",
+        "symfony/framework-bundle": "^4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.5",
+        "scrutinizer/ocular": "^1.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "PHPViet\\Symfony\\NumberToWords\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PHPViet\\Symfony\\NumberToWords\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+	}
+}

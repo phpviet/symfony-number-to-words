@@ -89,8 +89,6 @@ Ngoài ra ta còn có thể sử dụng đơn vị tiền tệ khác thông qua 
 `toCurrency` và filter `n2c` với mảng phần từ đầu tiên là đơn vị cho số nguyên và kế tiếp là đơn vị của phân số:
 
 ```php
-use N2W;
-
 // sáu nghìn bảy trăm bốn mươi hai đô bảy xen
 $container->get('n2w')->toCurrency(6742.7, ['đô', 'xen']);
 

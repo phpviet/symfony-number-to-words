@@ -18,12 +18,12 @@ use PHPViet\Symfony\NumberToWords\DependencyInjection\Extension;
 class Bundle extends BaseBundle
 {
     /**
-     * @inheritDoc
+     * {@inheritdoc}
      */
     protected $name = 'PHPVietNumberToWordsBundle';
 
     /**
-     * @inheritDoc
+     * {@inheritdoc}
      */
     public function getContainerExtension(): Extension
     {
@@ -33,5 +33,4 @@ class Bundle extends BaseBundle
 
         return $this->extension;
     }
-
 }

@@ -97,7 +97,7 @@ class Service
     {
         $dictionary = $dictionary ?? $this->getDefaultDictionary();
 
-        if (!$dictionaryService = $this->config['dictionaries'][$dictionary] ?? null) {
+        if (! $dictionaryService = $this->config['dictionaries'][$dictionary] ?? null) {
             throw new InvalidConfigurationException(sprintf('Dictionary (%s) is not defined!', $dictionary));
         }
 
@@ -113,5 +113,4 @@ class Service
     {
         return $this->config['defaults']['dictionary'];
     }
-
 }

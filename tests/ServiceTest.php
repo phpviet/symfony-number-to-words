@@ -8,17 +8,14 @@
 
 namespace PHPViet\Symfony\NumberToWords\Tests;
 
-
 /**
  * @author Vuong Minh <vuongxuongminh@gmail.com>
  * @since 1.0.0
  */
 class ServiceTest extends TestCase
 {
-
     protected function setUp(): void
     {
-
     }
 
     /**
@@ -263,5 +260,4 @@ class ServiceTest extends TestCase
             ['mười bảy triệu bảy trăm nghìn một trăm đồng', 17700100],
         ];
     }
-
 }

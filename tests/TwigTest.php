@@ -17,14 +17,13 @@ use Nyholm\BundleTest\CompilerPass\PublicServicePass;
  */
 class TwigTest extends TestCase
 {
-
     protected function setUp(): void
     {
         $this->addCompilerPass(new PublicServicePass());
         $kernel = $this->createKernel();
         $kernel->addBundle(TwigBundle::class);
         $kernel->setProjectDir(__DIR__);
-        $kernel->addConfigFile(__DIR__ . '/Resources/twig-config.yaml');
+        $kernel->addConfigFile(__DIR__.'/Resources/twig-config.yaml');
         $this->bootKernel();
     }
 
@@ -48,5 +47,4 @@ class TwigTest extends TestCase
         $twig = $container->get('twig');
         $this->assertEquals('một ngàn', trim($twig->render('change-dictionary.twig')));
     }
-
 }

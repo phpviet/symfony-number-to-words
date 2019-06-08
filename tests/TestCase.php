@@ -18,17 +18,14 @@ use Nyholm\BundleTest\CompilerPass\PublicServicePass;
  */
 class TestCase extends BaseBundleTestCase
 {
-
     protected function setUp(): void
     {
         $this->addCompilerPass(new PublicServicePass());
         $this->bootKernel();
     }
 
-
     protected function getBundleClass(): string
     {
         return Bundle::class;
     }
-
 }

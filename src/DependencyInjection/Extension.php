@@ -27,7 +27,7 @@ class Extension extends BaseExtension
         $this->prepareConfig($configs);
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
-        $loader = new YamlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
+        $loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yaml');
         $definition = $container->getDefinition('n2w');
         $definition->addArgument($config);
@@ -50,12 +50,12 @@ class Extension extends BaseExtension
     {
         $defaultConfig = [
             'defaults' => [
-                'dictionary' => 'standard'
+                'dictionary' => 'standard',
             ],
             'dictionaries' => [
                 'standard' => 'n2w_standard_dictionary',
-                'south' => 'n2w_south_dictionary'
-            ]
+                'south' => 'n2w_south_dictionary',
+            ],
         ];
 
         foreach ($configs as &$config) {

@@ -29,11 +29,11 @@ class N2WExtension extends AbstractExtension
     /**
      * Khởi tạo extension
      *
-     * @param Service $helper Phone number helper.
+     * @param Service $service
      */
-    public function __construct(Service $helper)
+    public function __construct(Service $service)
     {
-        $this->service = $helper;
+        $this->service = $service;
     }
 
     /**

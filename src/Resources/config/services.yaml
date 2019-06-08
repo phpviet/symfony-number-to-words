@@ -9,6 +9,10 @@ services:
     n2w_standard_dictionary:
         class: PHPViet\NumberToWords\Dictionary
         public: true
+    n2w_twig_extension:
+        class: PHPViet\Symfony\NumberToWords\Twig\Extension\N2WExtension
+        arguments: ['@n2w']
+        tags:
+            - { name: twig.extension }
     PHPViet\NumberToWords\DictionaryInterface:
         class: PHPViet\NumberToWords\Dictionary
-        public: true

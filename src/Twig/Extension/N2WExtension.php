@@ -18,7 +18,6 @@ use PHPViet\Symfony\NumberToWords\Service;
  */
 class N2WExtension extends AbstractExtension
 {
-
     /**
      * Phone number helper.
      *
@@ -27,7 +26,7 @@ class N2WExtension extends AbstractExtension
     protected $service;
 
     /**
-     * Khởi tạo extension
+     * Khởi tạo extension.
      *
      * @param Service $service
      */
@@ -46,5 +45,4 @@ class N2WExtension extends AbstractExtension
             new TwigFilter('n2c', [$this->service, 'toCurrency']),
         ];
     }
-
 }

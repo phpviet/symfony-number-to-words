@@ -17,7 +17,6 @@ use PHPViet\NumberToWords\DictionaryInterface;
  */
 class BundleTest extends TestCase
 {
-
     public function testBundle(): void
     {
         $container = $this->getContainer();
@@ -28,5 +27,4 @@ class BundleTest extends TestCase
         $service = $container->get('n2w');
         $this->assertInstanceOf(Service::class, $service);
     }
-
 }

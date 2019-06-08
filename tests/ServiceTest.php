@@ -14,10 +14,8 @@ namespace PHPViet\Symfony\NumberToWords\Tests;
  */
 class ServiceTest extends TestCase
 {
-
     protected function setUp(): void
     {
-
     }
 
     /**
@@ -262,5 +260,4 @@ class ServiceTest extends TestCase
             ['mười bảy triệu bảy trăm nghìn một trăm đồng', 17700100],
         ];
     }
-
 }

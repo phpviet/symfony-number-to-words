@@ -14,14 +14,12 @@ namespace PHPViet\Symfony\NumberToWords\Tests;
  */
 class ChangeDictionaryTest extends TestCase
 {
-
     public function testTransform(): void
     {
         $kernel = $this->createKernel();
-        $kernel->addConfigFile(__DIR__ . '/Resources/change-dictionary-config.yaml');
+        $kernel->addConfigFile(__DIR__.'/Resources/change-dictionary-config.yaml');
         $this->bootKernel();
         $service = $this->getContainer()->get('n2w');
         $this->assertEquals('một ngàn', $service->toWords(1000));
     }
-
 }

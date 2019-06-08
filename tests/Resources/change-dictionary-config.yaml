@@ -1,0 +1,6 @@
+n2w:
+    defaults:
+        dictionary: 'south'
+    dictionaries:
+        standard: 'n2w_standard_dictionary'
+        south: 'n2w_south_dictionary'

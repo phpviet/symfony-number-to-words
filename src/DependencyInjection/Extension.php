@@ -24,13 +24,42 @@ class Extension extends BaseExtension
      */
     public function load(array $configs, ContainerBuilder $container): void
     {
+        $this->prepareConfig($configs);
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
         $loader = new YamlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
         $loader->load('services.yaml');
-        $loader->load('n2w.yaml');
         $definition = $container->getDefinition('n2w');
         $definition->addArgument($config);
     }
 
+    /**
+     * {@inheritdoc}
+     */
+    public function getAlias(): string
+    {
+        return 'n2w';
+    }
+
+    /**
+     * Thiết lập cấu hình mặc định.
+     *
+     * @param $configs
+     */
+    protected function prepareConfig(&$configs): void
+    {
+        $defaultConfig = [
+            'defaults' => [
+                'dictionary' => 'standard'
+            ],
+            'dictionaries' => [
+                'standard' => 'n2w_standard_dictionary',
+                'south' => 'n2w_south_dictionary'
+            ]
+        ];
+
+        foreach ($configs as &$config) {
+            $config = array_merge($defaultConfig, $config);
+        }
+    }
 }

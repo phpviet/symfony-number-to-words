@@ -10,4 +10,6 @@ services:
     n2w_standard_dictionary:
         class: PHPViet\NumberToWords\Dictionary
         public: true
-    PHPViet\NumberToWords\DictionaryInterface: '@n2w_standard_dictionary'
+    PHPViet\NumberToWords\DictionaryInterface:
+        class: PHPViet\NumberToWords\Dictionary
+        public: true

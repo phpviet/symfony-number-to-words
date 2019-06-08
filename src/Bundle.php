@@ -25,9 +25,13 @@ class Bundle extends BaseBundle
     /**
      * @inheritDoc
      */
-    protected function createContainerExtension(): Extension
+    public function getContainerExtension(): Extension
     {
-        return new Extension();
+        if (null === $this->extension) {
+            $this->extension = new Extension();
+        }
+
+        return $this->extension;
     }
 
 }

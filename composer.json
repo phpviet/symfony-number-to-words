@@ -20,7 +20,10 @@
         "symfony/framework-bundle": "^4.3"
     },
     "require-dev": {
+        "nyholm/symfony-bundle-test": "^1.4",
         "phpunit/phpunit": "~7.5",
+        "symfony/templating": "^4.3",
+        "symfony/twig-bundle": "^4.3",
         "scrutinizer/ocular": "^1.5"
     },
     "autoload": {

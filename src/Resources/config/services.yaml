@@ -3,7 +3,6 @@ services:
         class: PHPViet\Symfony\NumberToWords\Service
         arguments: ['@service_container']
         public: true
-        shared: false
     n2w_south_dictionary:
         class: PHPViet\NumberToWords\SouthDictionary
         public: true

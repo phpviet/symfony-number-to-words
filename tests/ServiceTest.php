@@ -8,7 +8,6 @@
 
 namespace PHPViet\Symfony\NumberToWords\Tests;
 
-
 /**
  * @author Vuong Minh <vuongxuongminh@gmail.com>
  * @since 1.0.0

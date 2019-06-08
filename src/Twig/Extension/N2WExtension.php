@@ -39,7 +39,7 @@ class N2WExtension extends AbstractExtension
     /**
      * {@inheritdoc}
      */
-    public function getFilters()
+    public function getFilters(): array
     {
         return [
             new TwigFilter('n2w', [$this->service, 'toWords']),

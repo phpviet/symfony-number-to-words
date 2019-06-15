@@ -4,15 +4,19 @@
     </a>
     <h1 align="center">Symfony Number To Words</h1>
     <br>
+    <p align="center">
+    <a href="https://packagist.org/packages/phpviet/symfony-number-to-words"><img src="https://img.shields.io/packagist/v/phpviet/symfony-number-to-words.svg?style=flat-square" alt="Latest version"></a>
+    <a href="https://travis-ci.org/phpviet/symfony-number-to-words"><img src="https://img.shields.io/travis/phpviet/symfony-number-to-words/master.svg?style=flat-square" alt="Build status"></a>
+    <a href="https://scrutinizer-ci.com/g/phpviet/symfony-number-to-words"><img src="https://img.shields.io/scrutinizer/g/phpviet/symfony-number-to-words.svg?style=flat-square" alt="Quantity score"></a>
+    <a href="https://styleci.io/repos/190297801"><img src="https://styleci.io/repos/190297801/shield?branch=master" alt="StyleCI"></a>
+    <a href="https://packagist.org/packages/phpviet/symfony-number-to-words"><img src="https://img.shields.io/packagist/dt/phpviet/symfony-number-to-words.svg?style=flat-square" alt="Total download"></a>
+    <a href="https://packagist.org/packages/phpviet/symfony-number-to-words"><img src="https://img.shields.io/packagist/l/phpviet/symfony-number-to-words.svg?style=flat-square" alt="License"></a>
+    </p>
 </p>
 
-Symfony number to words hổ trợ chuyển đổi số sang chữ số Tiếng Việt.
+## Thông tin
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/phpviet/symfony-number-to-words.svg?style=flat-square)](https://packagist.org/packages/phpviet/symfony-number-to-words)
-[![Build Status](https://img.shields.io/travis/phpviet/symfony-number-to-words/master.svg?style=flat-square)](https://travis-ci.org/phpviet/symfony-number-to-words)
-[![Quality Score](https://img.shields.io/scrutinizer/g/phpviet/symfony-number-to-words.svg?style=flat-square)](https://scrutinizer-ci.com/g/phpviet/symfony-number-to-words)
-[![StyleCI](https://styleci.io/repos/190297801/shield?branch=master)](https://styleci.io/repos/190297801)
-[![Total Downloads](https://img.shields.io/packagist/dt/phpviet/symfony-number-to-words.svg?style=flat-square)](https://packagist.org/packages/phpviet/symfony-number-to-words)
+Symfony number to words hổ trợ chuyển đổi số sang chữ số Tiếng Việt.
 
 ## Cài đặt
 
